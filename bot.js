@@ -1,5 +1,6 @@
 const mineflayer = require('mineflayer');
 const { setInterval } = require('timers');
+const http = require('http');
 
 // Create the bot and set the username
 const bot = mineflayer.createBot({
