@@ -51,3 +51,12 @@ bot.on('end', () => {
   console.log('Bot has disconnected!');
   process.exit(0); // Make sure the bot keeps running even after disconnecting
 });
+
+// HTTP Server to respond to pings
+http.createServer((req, res) => {
+    console.log('Received a ping request');
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end('Bot is running!\n');
+}).listen(process.env.PORT || 3000, () => {
+    console.log('HTTP Server running!');
+});
