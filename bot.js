@@ -4,8 +4,8 @@ const http = require('http');
 
 // Create the bot and set the username
 const bot = mineflayer.createBot({
-  host: 'infinityvelocity.falixsrv.me', // Replace with the server IP
-  port: 31706, // Default Minecraft port, change if necessary
+  host: '167.235.169.242', // Replace with the server IP
+  port: 28007, // Default Minecraft port, change if necessary
   username: 'ServManager1',
   version: '1.20.2' // Ensure this matches your server version
 });
